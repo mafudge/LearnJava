@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+/Lesson-01/HelloWorld/nbproject/private/
+/Lesson-01/HelloWorld/build/
+/Lesson-01/SayHello/nbproject/private/
+/Lesson-01/SayHello/build/
+/Lesson-01/InteractiveHello/nbproject/private/
+/Lesson-01/InteractiveHello/build/
