@@ -1,6 +1,6 @@
 package nsideddice;
 
-public class NSidedDice {
+public class NSidedDiceRun {
 
     public static void main(String[] args) {
         Die d6 = new Die(6);    // 6 sided-die
