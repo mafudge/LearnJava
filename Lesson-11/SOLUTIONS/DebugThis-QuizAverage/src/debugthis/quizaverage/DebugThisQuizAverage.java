@@ -44,9 +44,6 @@ import java.util.Scanner;
 
 public class DebugThisQuizAverage {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int count=0, grade=0, total=0;
