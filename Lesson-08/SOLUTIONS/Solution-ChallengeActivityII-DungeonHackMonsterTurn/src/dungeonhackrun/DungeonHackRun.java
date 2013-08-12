@@ -35,9 +35,9 @@ public class DungeonHackRun {
         Actor monster = new Actor("Grumpy Troll",5,8,c);
         Die d20 = new Die(20);
         
-        // player gets first attack :-)
+        // Player's turn
         int roll = d20.roll();
-        System.out.printf("[Roll=%d|AC=%d] ",roll,monster.armorClass());
+        System.out.printf("Roll=%d|AC=%d] ",roll,monster.armorClass());
         System.out.printf("%s %s his %s at the %s and "
                 , player.name(), player.weapon().action()
                 , player.weapon().name(), monster.name());
@@ -58,20 +58,19 @@ public class DungeonHackRun {
             System.out.printf("misses");
         }
         System.out.println("!");
-        
+            
         /* TODO: Implement your code here */
+        // Monster's turn
         if (!monster.isDead()) {
             roll = d20.roll();
             System.out.printf("[Roll=%d|AC=%d] ",roll,player.armorClass());
             System.out.printf("%s %s its %s at %s and "
                 , monster.name(), monster.weapon().action()
                 , monster.weapon().name(), player.name());
-                   if (roll >= monster.armorClass()) {            
-            int damage = player.weapon().hitDamage();
-            if (roll >= player.armorClass()) {   
-                    player.takeDamage(damage);
-                    System.out.printf("hits you for %d damage", damage);
-                }
+            if (roll >= monster.armorClass()) {            
+                int damage = monster.weapon().hitDamage();
+                player.takeDamage(damage);
+                System.out.printf("hits you for %d damage", damage);
                 if (player.isDead()) {
                     System.out.printf(", killing you");
                 }           
@@ -79,6 +78,6 @@ public class DungeonHackRun {
                 System.out.printf("misses");
             }
             System.out.println("!");
-        }                  
+        }
     }
 }

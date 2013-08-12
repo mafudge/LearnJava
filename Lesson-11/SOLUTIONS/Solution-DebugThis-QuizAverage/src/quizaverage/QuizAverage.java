@@ -32,17 +32,15 @@
  * 
  * 
  * Enter Quiz 1 grade (a value between 0 and 100 or a -1 to quit) => -1
- * Quiz Count :         0
- * Total Points:	0
- * Average Grade:	0.000000
+ * No Quiz Grades Entered!
  * 
  * 
  */
-package debugthis.quizaverage;
+package quizaverage;
 
 import java.util.Scanner;
 
-public class DebugThisQuizAverage {
+public class QuizAverage {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -55,14 +53,18 @@ public class DebugThisQuizAverage {
                 System.out.println("Invalid Grade!");
             } else if (grade == -1) {
                 break;
-            } else {
+            } else { //Acceptable Grade
                 count++;
                 total += grade;
             }
         }
-        if (count>0) { average = total/ (double)count; }
-        System.out.printf("Quiz Count :\t%d\n",count);
-        System.out.printf("Total Points:\t%d\n",total);
-        System.out.printf("Average Grade:\t%f\n",average);
+        if (count!=0) { 
+            average = total/ (double)count; 
+            System.out.printf("Quiz Count :\t%d\n",count);
+            System.out.printf("Total Points:\t%d\n",total);
+            System.out.printf("Average Grade:\t%f\n",average);
+        } else {
+            System.out.println("No Quiz Grades Entered!");
+        }
     }
 }
