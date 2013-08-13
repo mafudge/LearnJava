@@ -44,7 +44,7 @@ public class Deck {
         return card_deck.remove(0);
     }
     
-    // returns a card to the (bottom) of  the pile
+    // returns a card to the (bottom) of the pile
     public void discard(Card c) {
         card_deck.add(c);
     }
