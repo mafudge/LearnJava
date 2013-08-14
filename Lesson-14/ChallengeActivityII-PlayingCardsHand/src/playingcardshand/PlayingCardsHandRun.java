@@ -23,7 +23,7 @@
  
  * PROGRAM OUTPUT:
  * 
- *  (SEED=44) 
+ *  (When seed=44) 
 Random number seed : 44
 New Deck(52)	: 2♣ 3♣ 4♣ 5♣ 6♣ 7♣ 8♣ 9♣ T♣ J♣ Q♣ K♣ A♣ 2♦ 3♦ 4♦ 5♦ 6♦ 7♦ 8♦ 9♦ T♦ J♦ Q♦ K♦ A♦ 2♥ 3♥ 4♥ 5♥ 6♥ 7♥ 8♥ 9♥ T♥ J♥ Q♥ K♥ A♥ 2♠ 3♠ 4♠ 5♠ 6♠ 7♠ 8♠ 9♠ T♠ J♠ Q♠ K♠ A♠ 
 Shuffled(52)	: K♣ 9♥ K♦ K♠ Q♦ Q♠ 4♠ T♦ 8♦ 5♠ 6♦ 2♠ J♠ Q♣ 9♣ J♥ A♦ K♥ 9♠ 8♥ J♦ 6♣ 7♥ 4♣ 6♥ 5♥ 2♣ 9♦ 8♣ 3♠ 4♦ T♥ 3♥ Q♥ 2♦ 2♥ A♠ 3♦ 8♠ 5♦ 5♣ J♣ A♥ 7♣ 3♣ T♣ 7♠ 4♥ T♠ 7♦ 6♠ A♣ 
@@ -31,7 +31,7 @@ Your Hand( 5)	: K♣ 9♥ K♦ K♠ Q♦   Remaining Deck(47) : Q♠ 4♠ T♦ 8
 Pair of Queens?	false
 Three Kings?	true
  *
- *  (SEED=99)
+ *  (When seed=99)
 Random number seed : 99
 New Deck(52)	: 2♣ 3♣ 4♣ 5♣ 6♣ 7♣ 8♣ 9♣ T♣ J♣ Q♣ K♣ A♣ 2♦ 3♦ 4♦ 5♦ 6♦ 7♦ 8♦ 9♦ T♦ J♦ Q♦ K♦ A♦ 2♥ 3♥ 4♥ 5♥ 6♥ 7♥ 8♥ 9♥ T♥ J♥ Q♥ K♥ A♥ 2♠ 3♠ 4♠ 5♠ 6♠ 7♠ 8♠ 9♠ T♠ J♠ Q♠ K♠ A♠ 
 Shuffled(52)	: Q♣ 6♥ 3♣ Q♠ 9♥ 8♥ K♦ 7♠ A♠ 5♦ 8♣ 2♣ 3♦ J♣ J♠ A♣ J♥ 5♥ 8♠ 2♥ K♠ 7♣ T♦ 9♠ 3♥ 9♦ T♠ 4♦ 5♠ 2♠ 7♥ K♥ Q♦ A♦ Q♥ 4♥ 2♦ K♣ 6♦ 4♣ 6♠ 9♣ 4♠ 8♦ J♦ T♥ A♥ 7♦ 5♣ 6♣ T♣ 3♠ 
@@ -47,21 +47,10 @@ import playingcards.*;
 public class PlayingCardsHandRun {
     
    public static void main(String[] args) { 
-       int seed = 99;
-       Deck d = new Deck(1,seed);
-       Hand h = new Hand();
+       int seed = 44;
 
-       System.out.printf("Random number seed : %d\n",seed);
-       System.out.printf("New Deck(%2d)\t: %s\n",d.cardCount(), d.toString());
-       d.shuffle();
-       System.out.printf("Shuffled(%2d)\t: %s\n",d.cardCount(), d.toString());       
-       for (int i=0;i<5;i++){
-        h.add(d.deal());
-       }
-       System.out.printf("Your Hand(%2d)\t: %s  Remaining Deck(%2d) : %s\n",h.cardCount(), h.toString(), d.cardCount(), d.toString());
-       
-       System.out.printf("Pair of Queens?\t%s\n", h.rankCount(Ranks.QUEEN)==2);
-       System.out.printf("Three Kings?\t%s\n", h.rankCount(Ranks.KING)==3);
+       // TODO: Implement program code here
+   
    }
     
 }
