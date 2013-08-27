@@ -19,5 +19,15 @@ public class OnePlusTwoEqualsTwelve {
         int j = Integer.parseInt(y);
         
         System.out.println(i + j);
+        
+        // What about booleans? 
+        String areYouHappy = "true";
+        boolean ishappy = Boolean.parseBoolean(areYouHappy);
+        System.out.println(ishappy);
+        
+        // Or String to double?
+        String gpa = "3.96";
+        Double realgpa = Double.parseDouble(gpa);
+        System.out.println(realgpa - 1.0 );
     }
 }
