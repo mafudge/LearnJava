@@ -1,8 +1,8 @@
-package functionbasics;
+package methodbasics;
 
 import java.util.Scanner;
 
-public class FunctionBasics {
+public class MethodBasics {
 
     public static void main(String[] args) {
         // TODO code application logic here
