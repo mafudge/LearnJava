@@ -2,11 +2,19 @@ package arraysofobjects;
 
 public class Student {
 
-    public String Name;
-    public int Grade;
+    private String _name;
+    private int _grade;
     
     public Student(String name, int grade) {
-        this.Grade = grade;
-        this.Name = name;
+        this._grade = grade;
+        this._name = name;
+    }
+    
+    public String Name() {
+        return this._name;
+    }
+    
+    public int Grade() {
+        return this._grade;
     }
 }
