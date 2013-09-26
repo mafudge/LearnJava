@@ -12,8 +12,9 @@ public enum Marker {
     Marker(char ch) {
         this.ch = ch;
     }
-    
-    public char toChar() {
-        return this.ch;
+        
+    @Override
+    public String toString() {
+        return String.format("%c", this.ch);
     }
 }

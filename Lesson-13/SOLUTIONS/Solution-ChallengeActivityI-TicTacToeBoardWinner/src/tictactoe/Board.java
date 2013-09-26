@@ -45,9 +45,9 @@ public class Board {
             System.out.printf("%d ",i);
             for (int j=0;j<3;j++) {
                 if (j<2) {
-                    System.out.printf("%c|",board[i][j].toChar());
+                    System.out.printf("%s|",board[i][j]);
                 } else {
-                    System.out.printf("%c",board[i][j].toChar());                
+                    System.out.printf("%s",board[i][j]);                
                 }
             }
             System.out.printf("\n");

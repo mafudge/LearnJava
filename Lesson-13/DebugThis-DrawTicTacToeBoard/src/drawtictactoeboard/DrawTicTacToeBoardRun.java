@@ -38,7 +38,7 @@ public class DrawTicTacToeBoardRun {
 
     public static void main(String[] args) {
         Board ttt;
-        ttt.Draw();
+        board.Draw();
         ttt.Place(1, 1, Marker.X);
         ttt.Place(1,2 Marker.O);
         ttt.Draw();        
