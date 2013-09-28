@@ -15,18 +15,19 @@ public class ArrayListExample {
         psy101.add(new Student("Bob",2.9));
         psy101.add(new Student("Dave",3.2));
         psy101.add(new Student("Sally",4.0));
+        psy101.add(new Student("Alice",3.15));
         
         // Access as a collection
         System.out.printf("Student\tGPA\n");
         for( Student s : psy101) {
-            s.println();
+            System.out.printf("%s\n",s);
         }
         System.out.println();
         
         // Access with an index, similar to an array
         System.out.printf("Student\tGPA\n");
         for(int i=0;i< psy101.size();i++) {
-            psy101.get(i).println();
+            System.out.printf("%s\n",psy101.get(i));
         }
                 
     }

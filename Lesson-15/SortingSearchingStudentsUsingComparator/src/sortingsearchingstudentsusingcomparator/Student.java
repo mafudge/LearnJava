@@ -1,9 +1,11 @@
-package arraylistexample;
-
-/**
- * Student Class. Used in the ArrayList Example
- * @author mafudge
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
+package sortingsearchingstudentsusingcomparator;
+
+import java.io.PrintStream;
+
 public class Student {
     private String Name;
     private double GPA;
@@ -31,6 +33,6 @@ public class Student {
     
     @Override
     public String toString() {
-        return String.format("%s\t%f",this.Name, this.GPA);
+       return String.format("%s\t%f",this.Name, this.GPA);
     }
 }
