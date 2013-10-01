@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 public class Student implements Serializable {
     private String Name;
-    private double GPA;
+    private double GPA;    
     
     public Student(String name, double gpa) {
         this.Name = name;
@@ -16,7 +16,7 @@ public class Student implements Serializable {
         return this.Name;
     }
     
-    public String getName(String newName) {
+    public String setName(String newName) {
         return (this.Name = newName);
     }
     
@@ -32,4 +32,6 @@ public class Student implements Serializable {
     public String toString() {
        return String.format("%s\t%f",this.Name, this.GPA);
     }
+    
+
 }
