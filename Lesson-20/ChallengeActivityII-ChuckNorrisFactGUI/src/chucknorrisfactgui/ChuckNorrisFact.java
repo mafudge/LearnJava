@@ -1,4 +1,4 @@
-package chucknorrisfact;
+package chucknorrisfactgui;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
