@@ -1,18 +1,24 @@
-
-package twittersearchapidemo;
+package redditapidemo;
 
 import com.google.gson.Gson;
 import java.io.BufferedReader;
-import java.net.URL;
 import java.io.InputStreamReader;
-import net.sf.json.*;
+import java.net.URL;
 
- 
+public class RedditApiDemo {
 
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String json = readUrl("http://api.reddit.com/hot");
+        
+    Gson gson = new Gson();        
+    Reddit reddit = gson.fromJson(json, Reddit.class);
 
-public class TwitterSearchApiDemo {
+    for (Item item : page.items)
+        System.out.println("    " + item.title);
+    }
     
-    private static String readUrl(String urlString) throws Exception {
+ private static String readUrl(String urlString) throws Exception {
     BufferedReader reader = null;
     try {
         URL url = new URL(urlString);
@@ -30,14 +36,4 @@ public class TwitterSearchApiDemo {
     }
 
 }
-
-    public static void main(String[] args) throws Exception {
-        // send search request using the Twitter search http encoded URL
-        URL url;
-        String jsonString = readUrl("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson");
-        System.out.println(jsonString);
-        String[] proplist = jsonString.split("properties");
-        
-        
-    }
 }

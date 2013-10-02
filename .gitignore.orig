@@ -275,6 +275,7 @@
 /Lesson-18/GUIFormExamples/build/
 /Lesson-18/JavaApplication52/nbproject/private/
 /Lesson-18/JavaApplication52/build/
+<<<<<<< HEAD
 /Lesson-18/DemoSwingControls/nbproject/private/
 /Lesson-18/DemoSwingControls/build/
 /Lesson-18/EverythingsAString/nbproject/private/
@@ -285,9 +286,10 @@
 /Lesson-19/ProductCatalogDemo/build/
 /Lesson-20/TwitterSearchApiDemo/nbproject/private/
 /Lesson-20/TwitterSearchApiDemo/build/
-/Lesson-20/AccuWeatherApiDemo/nbproject/private/
-/Lesson-20/RandomOrgApiDemo/nbproject/private/
-/Lesson-20/RandomOrgApiDemo/build/
-/Lesson-20/RedditApiDemo/nbproject/private/
-/Lesson-20/ChuckNorrisFact/nbproject/private/
-/Lesson-20/ChuckNorrisFact/build/
+=======
+/Lesson-18/TemperatureConversion/nbproject/private/
+/Lesson-18/TemperatureConversion/build/
+/Lesson-16/StudentGui/nbproject/private/
+/Lesson-16/StudentGui/build/
+/Lesson-16/StudentGui/dist/
+>>>>>>> b5aa30c8904579aabb4fea4197195e3802564921
