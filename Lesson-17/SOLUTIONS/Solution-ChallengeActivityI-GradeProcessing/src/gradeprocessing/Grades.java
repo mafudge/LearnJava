@@ -36,7 +36,7 @@ public class Grades {
      
      /**
       * returns the number of grades
-      * @return the number of grades as int
+      * @return the number of grades as integer
       */
      public int Count() {
          return this._grades.size();
