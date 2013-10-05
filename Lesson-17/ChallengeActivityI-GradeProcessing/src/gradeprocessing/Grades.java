@@ -26,10 +26,7 @@ public class Grades {
          try {
              Scanner input = new Scanner( file );
              // TODO: while there is a next input add the int you read to the grade collection
-             while (input.hasNext()) {
-                this._grades.add(input.nextInt());
-             }
-             input.close();
+
          } catch (FileNotFoundException ex) {
              Logger.getLogger(Grades.class.getName()).log(Level.SEVERE, null, ex);
          }
@@ -63,13 +60,8 @@ public class Grades {
       */
      public int Max() {
          // TODO: Implement this method, similar to Min()
-         int max = Integer.MIN_VALUE;
-         for(Integer i : this._grades) {
-             if (max < i) {
-                 max = i;
-             }
-         }
-         return max;
+         
+         return 0;
      }
 
      /**
@@ -79,10 +71,8 @@ public class Grades {
      public double Avg() {
          double sum = 0;
          //TODO: loop over each grade adding it to sum, then return the average.
-         for(Integer i : this._grades) {
-             sum += i;
-         }
-         return sum/this.Count();
+         
+         return 0;
      }
 
 }
