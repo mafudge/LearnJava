@@ -15,8 +15,7 @@ public class ArrayListExampleAddRemove {
         psy101.add(new Student("Dave",3.2));
         psy101.add(new Student("Sally",4.0));
         
-        
-        
+                
         printStudents(psy101);              // print students
         Student tmp = psy101.remove(0);     // remove a student from postion 0
         printStudents(psy101);               
