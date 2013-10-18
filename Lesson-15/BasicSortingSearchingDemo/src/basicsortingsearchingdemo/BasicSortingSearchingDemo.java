@@ -32,6 +32,11 @@ public class BasicSortingSearchingDemo {
        
     }
     
+    
+    /**
+     * Enumerates the ArrayList, printing out the numbers
+     * @param nums the ArrayList to print.
+     */
     public static void printNumbers(ArrayList<Integer> nums) {
         for(int i=0;i< nums.size();i++) {
             System.out.printf("%d ",nums.get(i));
@@ -39,6 +44,13 @@ public class BasicSortingSearchingDemo {
         System.out.println();
     }
     
+    
+    /**
+     * This code implements a linear search algorithm
+     * @param a the ArrayList to search
+     * @param target the value to find
+     * @return Returns the index of the target in the ArrayList, otherwise -1
+     */
     public static int find( ArrayList<Integer> a, Integer target) {
         int found = -1;
         for(int i=0;i<a.size();i++) {
@@ -50,6 +62,11 @@ public class BasicSortingSearchingDemo {
         return found;
     }
     
+    /**
+     * This code implements a bubble sort algorithm
+     * @param a ArrayList to sort
+     * @return Sorted ArrayList
+     */
     public static ArrayList<Integer> sort( ArrayList<Integer> a) {
         boolean swapped = false;
         int tmp =0;
