@@ -13,6 +13,10 @@ Each lesson folder contains:
   - Two **Challenge Activities** where you write a portion of code to complete a larger program. 
 - The solutions to the code exercises, in case you get stuck and need to peek at the answers.
 
+To follow along with the lessons, you'll need to install NetBeans 8. You can download it here:
+
+http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html
+
 
 Thank you and enjoy!
 
