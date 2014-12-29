@@ -19,31 +19,18 @@ public class CardTest {
     public CardTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     /**
      * Test of rank method, of class Card.
      */
     @Test
     public void testRank() {
         System.out.println("rank()");
+        //arrange
         Card instance = new Card(Ranks.QUEEN, Suits.HEARTS);
         int expResult = Ranks.QUEEN;
+        //act
         int result = instance.rank();
+        //assert
         assertEquals(expResult, result);
     }
 
@@ -53,9 +40,12 @@ public class CardTest {
     @Test
     public void testSuit() {
         System.out.println("suit()");
+        //arrange
         Card instance = new Card(Ranks.QUEEN, Suits.HEARTS);
         int expResult = Suits.HEARTS;
+        //act
         int result = instance.suit();
+        //assert
         assertEquals(expResult, result);
     }
 
@@ -65,10 +55,13 @@ public class CardTest {
     @Test
     public void testSameSuit() {
         System.out.println("sameSuit()");
+        //arrange
         Card c = new Card(Ranks.EIGHT, Suits.CLUBS);
         Card instance = new Card(Ranks.SEVEN, Suits.CLUBS);
         boolean expResult = true;
+        //act
         boolean result = instance.sameSuit(c);
+        //assert
         assertEquals(expResult, result);
     }
 
@@ -78,10 +71,13 @@ public class CardTest {
     @Test
     public void testSameRank() {
         System.out.println("sameRank()");
+        //arrange
         Card c = new Card(Ranks.JACK, Suits.CLUBS);
         Card instance = new Card(Ranks.JACK, Suits.DIAMONDS);
         boolean expResult = true;
+        //act
         boolean result = instance.sameRank(c);
+        //assert
         assertEquals(expResult, result);
     }
 
@@ -91,10 +87,13 @@ public class CardTest {
     @Test
     public void testSameCard() {
         System.out.println("sameCard()");
+        //arrange
         Card c = new Card(Ranks.ACE, Suits.SPADES);
         Card instance = new Card(Ranks.ACE, Suits.SPADES);
         boolean expResult = true;
+        //act
         boolean result = instance.sameCard(c);
+        //assert
         assertEquals(expResult, result);
     }
 
@@ -104,10 +103,13 @@ public class CardTest {
     @Test
     public void testRankDiff() {
         System.out.println("rankDiff()");
+        //arrange
         Card c = new Card(Ranks.TWO, Suits.DIAMONDS);
         Card instance = new Card(Ranks.NINE, Suits.HEARTS);
         int expResult = 7;
+        //act
         int result = instance.rankDiff(c);
+        //asert
         assertEquals(expResult, result);
     }
 
