@@ -6,7 +6,7 @@
  *  the area and perimeter of the recrangle. 
  * 
  *  Area = Length x Width
- *  Perimeter 2 x Length x Width
+ *  Perimeter = 2 x (Length + Width)
  * 
  * SAMPLE RUN: 
  *  Enter Length: 7
@@ -24,7 +24,7 @@ public class AreaAndPerimeterOfARectangle {
     public static void main(String[] args) {
         // declare variables
 
-        // get length and with inputs
+        // get length and width with inputs
         
         // perform area, perimeter calculations
         
