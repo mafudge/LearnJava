@@ -62,7 +62,28 @@ public class ATM {
         System.out.printf("*********************************\n\n");
         Scanner input = new Scanner(System.in);
         //TODO: Write your code here.
-        
+        BankAccount myacct = new BankAccount("1234", 500);
+        int attempts = 0;
+        boolean success= false;
+        while(true) {
+            System.out.print("Enter PIN # ==> ");
+            String pin = input.nextLine();
+            attempts++;
+            if (pin.equals(myacct.Pin())) {
+                success = true;
+                break;
+            }
+            if (attempts >= 3) {
+                success = false;
+                break;
+            }
+        }
+        if (success) {
+            menu();
+        } else {
+            System.out.println("You entered an invalid pin 3 times!");
+        }        
+
     }
 
     /**  main menu of ATM  */
