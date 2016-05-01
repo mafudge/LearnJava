@@ -22,7 +22,9 @@ package countingwithfor;
 public class CountingWithFor {
 
     public static void main(String[] args) {
-        //TODO: Write your code here
-   
-    }    
+        int count =0;
+        for(i;i<10;i++){
+            System.out.println(count);
+        }
+            }    
 }
