@@ -1,0 +1,18 @@
+Q. Convert feet into meters.
+
+Write a program that reads a number in feet, converts it to meters, and displays the result.
+One foor is 0.305 meter. Note: Use datatype as Double.
+
+Solution:
+import java.io.*;
+import java.util.*;
+public class convert {
+  public static void main(String[] args) {
+  Scanner s=new Scanner(System.in);
+  Double feet=s.nextDouble();
+  Double m=feet*0.305;
+  System.out.printf("%0.3f meters",m);
+ }
+}
+
+##..........................................##
