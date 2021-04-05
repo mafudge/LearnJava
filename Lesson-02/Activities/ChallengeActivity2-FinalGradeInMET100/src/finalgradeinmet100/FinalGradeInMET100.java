@@ -25,7 +25,24 @@ import java.util.Scanner;
 public class FinalGradeInMET100 {
 
     public static void main(String[] args) {
-       // TODO: Write solution here.
-        
+       Scanner sc=new Scanner(System.in);
+        int a,b,c,sum,perc;
+        System.out.println("ENTER SCORES IN THREE EXAMS=");
+        a=sc.nextInt();
+        b=sc.nextInt();
+        c=sc.nextInt();
+        if(a>150&&b>150&&c>150)
+        {
+            System.out.println("MARKS NOT APPLICABLE");
+            System.exit(0);
+        }
+        else
+        {
+            sum=a+b+c;
+            perc=(sum/450)*100;
+            System.out.println("SUM="+sum);
+            System.out.println("PERCENTAGE="+perc);
+        }
+             
     }
 }
