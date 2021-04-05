@@ -19,15 +19,19 @@ package areaandperimeterofarectangle;
 
 import java.util.Scanner;
 
-public class AreaAndPerimeterOfARectangle {
+public class AreaAndPerimeterOfARectangle 
+{
 
-    public static void main(String[] args) {
-        // declare variables
-
-        // get length and width with inputs
+    public static void main(String[] args) 
+    {
+        int a,b,p,area;
+        System.out.println("ENTER LENGTH AND WIDTH OF A RECTANGLE=");
+        a=sc.nextInt();
+        b=sc.nextInt();
+        p=2(a+b);
+        area=a*b;
+        System.out.println("AREA:"+area);
+        System.out.println("PERIMETER:"+p);
         
-        // perform area, perimeter calculations
-        
-        // display outputs
     }
 }
