@@ -21,7 +21,14 @@ import java.util.Scanner;
 public class AreaOfATriangle {
 
     public static void main(String[] args) {
-	// TODO : Write code here
+	Scanner sc=new Scanner(System.in);
+	int base,height,area;
+	System.out.println("Enter triangle base:");
+	base=sc.nextInt();
+	System.out.println("Enter triangle height:");
+	height=sc.nextInt();
+	area=(base*height)/2;
+	System.out.println("Triangle area:"+area);	
 
     }
 }
