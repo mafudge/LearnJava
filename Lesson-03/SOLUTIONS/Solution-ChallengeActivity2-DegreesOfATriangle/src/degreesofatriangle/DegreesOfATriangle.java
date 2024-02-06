@@ -29,7 +29,7 @@ public class DegreesOfATriangle {
         Scanner input= new Scanner(System.in);
         System.out.print("Enter degrees for angle 1 : ");
         a1 = input.nextInt();
-        System.out.print("Enter degrees for angle 3 : ");
+        System.out.print("Enter degrees for angle 2 : ");
         a2 = input.nextInt();
         System.out.print("Enter degrees for angle 3 : ");
         a3 = input.nextInt();

@@ -57,32 +57,12 @@ import java.util.Scanner;
 public class ATM {
     
     public static void main(String[] args) {    
-        //TODO: Write your code here.
         System.out.printf("*********************************\n");
         System.out.printf("*** Welcome to FudgeBank ATM! ***\n");
         System.out.printf("*********************************\n\n");
         Scanner input = new Scanner(System.in);
-        BankAccount myacct = new BankAccount("1234", 500);
-        int attempts = 0;
-        boolean success= false;
-        while(true) {
-            System.out.print("Enter PIN # ==> ");
-            String pin = input.nextLine();
-            attempts++;
-            if (pin.equals(myacct.Pin())) {
-                success = true;
-                break;
-            }
-            if (attempts >= 3) {
-                success = false;
-                break;
-            }
-        }
-        if (success) {
-            menu();
-        } else {
-            System.out.println("You entered an invalid pin 3 times!");
-        }        
+        //TODO: Write your code here.
+
     }
 
     public static void menu() {

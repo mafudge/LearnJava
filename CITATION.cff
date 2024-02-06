@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Fudge"
+  given-names: "Michael"
+  orcid: "https://orcid.org/0009-0006-2760-9360"
+title: "LearnJava: Code samples and exercises for learning Java"
+version: v3.0.0
+doi: 10.5281/zenodo.10607299
+date-released: 2014-07-30
+url: "https://github.com/mafudge/LearnJava"

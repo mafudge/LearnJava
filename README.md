@@ -1,5 +1,8 @@
 # LearnJava 
 
+[![DOI](https://zenodo.org/badge/11675734.svg)](https://zenodo.org/doi/10.5281/zenodo.10607299)
+
+
 This repository contains code samples and exercises to support the **Learn to Program in Java** video series.
 
 [Here's a link to the series on YouTube](https://www.youtube.com/playlist?list=PLyRiRUsTyUXhUXoOPEdMZWhGpGeSQFZgH)
